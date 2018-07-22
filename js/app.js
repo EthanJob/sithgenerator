@@ -4,7 +4,13 @@ app.controller('MainController', function($scope) {
 
   $scope.prefixes = ["Darth", "Lord", "Master", "Emperor"];
   $scope.funnys = ["Yes", "No"];
-  this.randomName = ["Kreia", "Revan", "Malak", "Zannah", "Shira Brie", "Valek", "Toki Ran", "Sheev Daral", "Exar", "Andeddu"];
+
+  this.randomName = [
+    "Kreia", "Revan", "Malak", "Zannah", "Shira Brie", "Valek", "Toki Ran", "Sheev Daral", "Exar", "Andeddu"
+  ];
+  this.randomFunnyName = [
+    "butt", "face"
+  ];
 
   this.ready = false;
 
@@ -13,8 +19,13 @@ app.controller('MainController', function($scope) {
   }
 
   this.done = () => {
-    this.ready = true;
-    this.sithName = this.randomName[Math.floor(Math.random() * this.randomName.length)];
+    if ($scope.selectedFunny === "Yes") {
+      this.sithName = this.randomFunnyName[Math.floor(Math.random() * this.randomFunnyName.length)];
+      this.ready = true;
+    } else {
+      this.sithName = this.randomName[Math.floor(Math.random() * this.randomName.length)];
+      this.ready = true;
+    }
   }
 
 
