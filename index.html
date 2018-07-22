@@ -14,19 +14,19 @@
     <div class="sithForm">
 
       <div class="choose">
-        <p>Prefix: <select class="select" ng-model="selectedPrefix" ng-options="x for x in prefixes">
+        <h3>Prefix: <select class="select" ng-model="selectedPrefix" ng-options="x for x in prefixes"></h3>
         </select>
-        Funny Name: <select class="select" ng-model="selectedFunny" ng-options="x for x in funnys">
-        </select></p>
+        <h3>Funny Name: <select class="select" ng-model="selectedFunny" ng-options="x for x in funnys">
+        </select></h3>
       </div>
       <br>
 
-      <button ng-click="ctrl.done()" type="button" name="button">Done</button>
-      <h1>Your Sith name: </h1>
+      <button id="doneButton" class="button" ng-click="ctrl.done()" type="button">Done</button>
+      <h1>Your Sith Name:</h1>
 
-      <div class="" ng-if="ctrl.ready === true">
-        <h2 class="sithName">{{selectedPrefix}} {{ctrl.sithName}}</h2>
-        <button ng-click="ctrl.reload()" type="button" name="button">Try Again</button>
+      <div class="completedName" ng-if="ctrl.ready === true">
+        <h1 class="sithName"><u>{{selectedPrefix}} {{ctrl.sithName}}</u></h1>
+        <button id="redoButton" class="button" ng-click="ctrl.reload()" type="button">Start Over</button>
       </div>
 
     </div>

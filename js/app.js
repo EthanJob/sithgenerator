@@ -9,14 +9,14 @@ app.controller('MainController', function($scope) {
     "Kreia", "Revan", "Malak", "Zannah", "Shira Brie", "Valek", "Toki Ran", "Sheev Daral", "Exar", "Andeddu"
   ];
   this.randomFunnyName = [
-    "butt", "face"
+    "Patrick Stevens", "lil Saber", "Scoopity Whoop", "Darth", "Daddy", "Papa", "Toe-Licker",
   ];
 
   this.ready = false;
 
   this.reload = () => {
     location.reload();
-  }
+  };
 
   this.done = () => {
     if ($scope.selectedFunny === "Yes") {
@@ -26,7 +26,7 @@ app.controller('MainController', function($scope) {
       this.sithName = this.randomName[Math.floor(Math.random() * this.randomName.length)];
       this.ready = true;
     }
-  }
+  };
 
 
 });
