@@ -2,9 +2,9 @@ const app = angular.module('SithApp', []);
 
 app.controller('MainController', function($scope) {
 
-  $scope.prefixes = ["Darth", "Lord", "Master"];
+  $scope.prefixes = ["Darth", "Lord", "Master", "Emperor"];
   $scope.funnys = ["Yes", "No"];
-  this.randomName = ["Tester", "Test", "Also a Tester"];
+  this.randomName = ["Kreia", "Revan", "Malak", "Zannah", "Shira Brie", "Valek", "Toki Ran", "Sheev Daral", "Exar", "Andeddu"];
 
   this.ready = false;
 
