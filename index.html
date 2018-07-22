@@ -12,18 +12,23 @@
     <h1>Generate Your Sith Name</h1>
 
     <div class="sithForm">
+
       <div class="choose">
-        <p>Prefix: <select class="select" ng-model="selectedName" ng-options="x for x in names">
+        <p>Prefix: <select class="select" ng-model="selectedPrefix" ng-options="x for x in prefixes">
         </select>
-        Gender: <select class="select" ng-model="selectedGender" ng-options="x for x in genders">
+        Funny Name: <select class="select" ng-model="selectedFunny" ng-options="x for x in funnys">
         </select></p>
       </div>
       <br>
+
       <button ng-click="ctrl.done()" type="button" name="button">Done</button>
       <h1>Your Sith name: </h1>
-      <h2 class="sithName" ng-if="ctrl.ready === true">{{selectedName}} {{ctrl.randomName}}</h2>
+
+      <div class="" ng-if="ctrl.ready === true">
+        <h2 class="sithName">{{selectedPrefix}} {{ctrl.sithName}}</h2>
+        <button ng-click="ctrl.reload()" type="button" name="button">Try Again</button>
+      </div>
+
     </div>
-
-
   </body>
 </html>
