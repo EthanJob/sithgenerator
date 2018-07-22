@@ -1,3 +1,28 @@
+body {
+  text-align: center;
+  background-color: black;
+}
+
 h1 {
-  color: blue;
+  color: firebrick;
+}
+
+p {
+  color: white;
+}
+
+.sithForm {
+  padding: 20px 0 20px 0;
+}
+
+.choose {
+  padding: 20px 0 15px 0;
+}
+
+.select {
+  color: black;
+}
+
+.sithName {
+  color: red;
 }

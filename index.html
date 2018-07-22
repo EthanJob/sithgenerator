@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body ng-controller='MainController as ctrl'>
-    <h1>Test</h1>
+    <h1>Generate Your Sith Name</h1>
 
-      Prefix: <select ng-model="selectedName" ng-options="x for x in names">
-      </select>
-      Gender: <select ng-model="selectedGender" ng-options="x for x in genders">
-      </select>
+    <div class="sithForm">
+      <div class="choose">
+        <p>Prefix: <select class="select" ng-model="selectedName" ng-options="x for x in names">
+        </select>
+        Gender: <select class="select" ng-model="selectedGender" ng-options="x for x in genders">
+        </select></p>
+      </div>
+      <br>
       <button ng-click="ctrl.done()" type="button" name="button">Done</button>
       <h1>Your Sith name: </h1>
-      <h2 ng-if="ctrl.ready === true">{{selectedName}}</h2>
+      <h2 class="sithName" ng-if="ctrl.ready === true">{{selectedName}} {{ctrl.randomName}}</h2>
+    </div>
+
 
   </body>
 </html>
