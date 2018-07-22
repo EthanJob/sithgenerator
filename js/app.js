@@ -2,9 +2,13 @@ const app = angular.module('SithApp', []);
 
 app.controller('MainController', function($scope) {
 
-  this.run = () => {
-    this.name = $scope.name;
-    console.log(this.name);
+  $scope.names = ["Darth", "Lord", "Master"];
+  $scope.genders = ["Male", "Female"];
+
+  this.ready = false;
+
+  this.done = () => {
+    this.ready = true;
   }
 
 
