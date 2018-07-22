@@ -1,9 +1,11 @@
 const app = angular.module('SithApp', []);
 
-app.controller('MainController', ['$http', function($http) {
+app.controller('MainController', function($scope) {
 
-  console.log("connected angular");
+  this.run = () => {
+    this.name = $scope.name;
+    console.log(this.name);
+  }
 
 
-
-}]);
+});
