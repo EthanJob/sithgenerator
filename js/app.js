@@ -6,10 +6,10 @@ app.controller('MainController', function($scope) {
   $scope.funnys = ["Yes", "No"];
 
   this.randomName = [
-    "Kreia", "Revan", "Malak", "Zannah", "Shira Brie", "Valek", "Toki Ran", "Sheev Daral", "Exar", "Andeddu"
+    "Kreia", "Revan", "Malak", "Zannah", "Shira Brie", "Valek", "Toki Ran", "Sheev Daral", "Exar", "Andeddu", "Nihl", "Vergere"
   ];
   this.randomFunnyName = [
-    "Patrick Stevens", "lil Saber", "Scoopity Whoop", "Darth", "Daddy", "Papa", "Toe-Licker",
+    "Patrick Stevens", "lil Saber", "Scoopity Whoop", "Darth", "Daddy", "Papa", "Toe-Licker", "Virgin", "Potato", "Pretzel", "Kanye", "Dippy", "Scot with one t", "Shmaster"
   ];
 
   this.ready = false;
@@ -27,6 +27,5 @@ app.controller('MainController', function($scope) {
       this.ready = true;
     }
   };
-
 
 });
