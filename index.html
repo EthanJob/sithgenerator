@@ -27,6 +27,7 @@
 
       <div class="completedName" ng-if="ctrl.ready === true">
         <h1 class="sithName"><u>{{selectedPrefix}} {{ctrl.sithName}}</u></h1>
+        <button class="button" ng-click="ctrl.done()" type="button">Give me another name</button><br>
         <button id="redoButton" class="button" ng-click="ctrl.reload()" type="button">Start Over</button>
       </div>
 
