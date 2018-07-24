@@ -2,6 +2,7 @@ body {
   text-align: center;
   background-color: black;
   padding-top: 20px;
+  width: auto;
 }
 
 h1 {
@@ -45,4 +46,11 @@ p {
   font-size: 25px;
   border-radius: 10px;
   padding: 0 12px 0 12px;
+}
+
+@media screen and (max-width:500px) {
+  body {
+    width: 100%;
+  }
+
 }
